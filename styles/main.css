@@ -16,7 +16,7 @@ nav {
   position: fixed;
   top: 0;
   padding: 10px;
-  min-width: 775px;
+  min-width: 700px;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
@@ -41,7 +41,7 @@ nav ul {
 nav li {
 
 }
-.welcome {
+.main {
   height: 120vh;
   padding-top: 88px;
 }
