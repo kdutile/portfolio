@@ -46,6 +46,7 @@ nav ul {
 .main {
   height: 120vh;
   padding-top: 83px;
+  opacity: 0;
 }
 .mobile {
   display: none;
@@ -62,6 +63,50 @@ nav ul {
 .mobile ion-icon {
   font-size: 40px;
   margin: auto 2%;
+}
+.mobile-drpdwn {
+  opacity: 1;
+  position: fixed;
+  top: 83px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 83px);
+}
+.mobile-drpdwn ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  font-size: 40px;
+}
+.mobile-drpdwn li {
+  padding: 2% 20%;
+  min-width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+#drop-icons {
+  font-size: 50px;
+  min-width: 75%;
+  min-height: 63px;
+}
+.mobile-drpdwn a{
+  display: contents;
+}
+.mobile-drpdwn ion-icon{
+  margin: auto 0;
+}
+.linkedin:hover {
+  color: #0a66c2;
+}
+.mail:hover {
+  color: #DB4437;
+}
+.github:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 5px;
 }
 @media screen and (max-width: 715px) {
   .desktop {
