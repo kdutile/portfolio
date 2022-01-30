@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,10 +11,10 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../scripts/app.js" charset="utf-8"></script>
-    <title>Kevin Dutile - Resume</title>
+    <title>Kevin Dutile</title>
   </head>
   <body>
-    <nav>
+    <nav class="desktop">
       <h1>KEVIN DUTILE</h1>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -24,10 +25,28 @@
         <!-- <li><ion-icon name="mail"></ion-icon><ion-icon name="logo-linkedin"></ion-icon><ion-icon name="logo-github"></ion-icon></li> -->
       </ul>
     </nav>
-    <section class="main">
+    <section class="main desktop">
       <article>
         Something's going here, not sure what.
       </article>
     </section>
+    <button type="button" class="mobile">
+      <ion-icon class="chevron" name="chevron-down-outline"></ion-icon>
+      <h1>KEVIN DUTILE</h1>
+    </button>
+    <section class="mobile-drpdwn">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../pages/resume.html">Resume</a></li>
+        <li><a href="../pages/projects.html">Projects</a></li>
+        <li id="drop-icons">
+          <a href="mailto:kevin.dutile@gmail.com" target="_blank"><ion-icon name="mail" class="mail"></ion-icon></a>
+          <a href="https://www.linkedin.com/in/kevindutile/" target="_blank"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a>
+          <a href="https://github.com/kdutile" target="_blank"><ion-icon name="logo-github" class="github"></ion-icon></a>
+        </li>
+      </ul>
+    </section>
+
   </body>
 </html>
