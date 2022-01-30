@@ -12,6 +12,7 @@
        $('.chevron').attr('name','chevron-down-outline');
      }
      $mobileNav.toggleClass('unhide');
+     $('section.main').toggleClass('hide');
    }
    $dropArrow.on('click', openModal);
 
