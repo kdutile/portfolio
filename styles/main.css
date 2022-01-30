@@ -46,7 +46,7 @@ nav ul {
 .main {
   height: 120vh;
   padding-top: 83px;
-  opacity: 0;
+  display: none;
 }
 .mobile {
   display: none;
@@ -65,7 +65,7 @@ nav ul {
   margin: auto 2%;
 }
 .mobile-drpdwn {
-  opacity: 1;
+  display: none;
   position: fixed;
   top: 83px;
   left: 0;
@@ -93,24 +93,31 @@ nav ul {
 }
 .mobile-drpdwn a{
   display: contents;
+  min-width: 60px;
 }
 .mobile-drpdwn ion-icon{
   margin: auto 0;
 }
 .linkedin:hover {
   color: #0a66c2;
+  transform: scale(1.2);
 }
 .mail:hover {
   color: #DB4437;
+  transform: scale(1.2);
 }
 .github:hover {
   color: #ffffff;
   background-color: #000000;
   border-radius: 5px;
+  transform: scale(1.1);
 }
 @media screen and (max-width: 715px) {
   .desktop {
     display: none;
+  }
+  .unhide {
+    display: block;
   }
   .mobile {
     display: flex;
