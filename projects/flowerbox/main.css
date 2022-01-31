@@ -1,0 +1,211 @@
+body,header,footer,section,nav,article,figure,ul,li,h1,h2,h3,h4,h5,p,a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'DM Sans', sans-serif;
+}
+nav {
+  order: -1;
+  background-color: #91b2b9;
+  padding: 1em 0;
+  flex: 0.25;
+  font-size: 0.75em;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  color: white;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding: 1em 0;
+  margin: 0 auto;
+  gap: .8em;
+  width: 621px;
+}
+header {
+ background-image: url(./imgs/banner.png);
+ background-repeat: no-repeat;
+ background-size: cover; /* CREDIT: https://stackoverflow.com/questions/41559817/how-to-keep-aspect-ratio-of-a-background-image */
+ min-height: 247px;
+ flex: 4;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ justify-content: center;
+}
+header h1 {
+  margin-right: 10px;
+  color: #91b2b9;
+  font-size:2.7em;
+  text-shadow: 1px 1px #ffffff;
+}
+header p {
+  margin-right: 10px;
+  color: #f0a8bc;
+  font-size: .7em;
+}
+header span {
+  background-color: #ffffff;
+  padding: 0 .3em;
+}
+footer {
+  background-color: #eeeeee;
+}
+.cards {
+  display: flex;
+  flex: 11;
+  justify-content: space-between;
+  gap: 0.6em;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  gap: 6px;
+  box-shadow: 1px 1px #eeeeee;
+}
+.listing {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.5em;
+  align-items: baseline;
+}
+.name, .footer h4 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: .7em;
+  color: #91b2b9;
+  margin-bottom: 5px;
+}
+.price {
+  font-size: .7em;
+  color: #ffffff;
+  background-color: #f0a8bc;
+  padding: .25em;
+}
+.tags {
+  display: flex;
+  margin: 0 0 0.5em 0.5em;
+  gap: 5px;
+}
+.tags li {
+  background-color: #eeeeee;
+  padding: 2px;
+  font-size: 7px;
+  color: #777777;
+}
+img.flower {
+  max-height: 200px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  flex: 3;
+  padding: 1em 0;
+}
+footer article {
+ padding: 0 2em;
+}
+footer article:nth-child(2) {
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: #80777777;
+  border-width: thin;
+}
+footer li {
+  font-size: .3em;
+  margin-bottom: 5px;
+}
+footer a {
+  color: #777777;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+figure {
+  margin
+}
+.logo {
+  max-height: 50px;
+}
+figcaption {
+  color: #f0a8bc;
+  font-size: 7px;
+  text-align: center;
+}
+ion-icon {
+  max-height: 12px;
+  color: #91b2b9;
+}
+@media (max-width:633px) {
+  body {
+    width: 410px;
+  }
+  header {
+    min-height: 162px;
+  }
+}
+@media (max-width:423px) {
+  body {
+    width: 250px;
+  }
+  header {
+    background-color: #ffdce0;
+    min-height: 64px;
+    background-size: 11em;
+    background-position: bottom 0px left -3px;
+    justify-content: flex-start;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  header p {
+    font-size: .5em;
+  }
+  nav {
+    padding: 0.5em 0;
+  }
+  nav ul {
+    gap: 5px 18px;
+    flex-wrap: wrap;
+  }
+  nav li:nth-child(2){
+    order:2;
+  }
+  nav li:nth-child(3){
+    order:3;
+  }
+  img.flower {
+    max-height: 250px;
+  }
+  footer {
+    flex-direction: column;
+    padding: 0.5em 0;
+    align-content: center;
+    text-align: center;
+  }
+  footer article {
+    padding: 0.5em;
+    margin: 0 1.5em;
+  }
+  footer article:nth-child(2) {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: #80777777;
+    border-width: thin;
+  }
+
+}

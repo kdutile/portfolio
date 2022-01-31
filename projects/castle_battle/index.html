@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Castle Battle</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1>Castle Battle</h1>
+
+    <section id="start-prompt">
+      <h2>Who would you like to play against?</h2>
+      <button type="button" id="computer-game">The Computer</button>
+      <!-- <button type="button" id="player-game">Another Player</button> -->
+    </section>
+
+    <!-- This is where all our game stuff will be added -->
+    <!-- Wanted to include HP tracker here but ran out of time. -->
+    <section id="display">
+      <h2>The Game</h2>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="3">Barracks</th>
+            </tr>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody id="player1Barracks">
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <section id="hitpoints">
+      <h4 class="player-hp">Player HP: </h4>
+      <h4 class="computer-hp">Computer HP: </h4>
+    </section>
+
+    <!-- STRETCH GOAL: visual representation of battle -->
+
+    </body>
+</html>

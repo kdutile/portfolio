@@ -1,3 +1,5 @@
+/* Credit for colorblind colors: https://davidmathlogic.com/colorblind/#%23005AB5-%23DC3220 */
+
 /***********************/
 /* Browser reset stuff */
 /***********************/
@@ -108,6 +110,13 @@ article {
   margin: 0 0 1em 0;
   list-style-type: disc;
 }
+#resume ion-icon {
+  font-size: 30px;
+}
+#resume ion-icon:hover {
+  color: #DC3220;
+  transform: scale(1.1);
+}
 /******************/
 /* Carousel specific */
 /******************/
@@ -123,6 +132,10 @@ article {
 }
 .carousel ion-icon {
   font-size: 40px;
+}
+.carousel ion-icon:hover {
+  color: #DC3220;
+  transform: scale(1.1);
 }
 .carousel article {
   width: 90%;
@@ -195,8 +208,25 @@ article {
   margin: auto 0;
 }
 /*****************/
-/* Hover styling */
+/* Nav hover styling */
 /*****************/
+.current-page {
+  color:#005AB5;
+  transform: none;
+}
+.desktop li:hover {
+  color: #DC3220;
+  transform: scale(1.1);
+}
+.mobile-drpdwn li:hover {
+  color: #DC3220;
+  transform: scale(1.1);
+}
+
+#drop-icons {
+  color: black;
+  transform: none;
+}
 .linkedin:hover {
   color: #0a66c2;
   transform: scale(1.2);
