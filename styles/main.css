@@ -80,6 +80,27 @@ article img {
   border-width: thin;
   border-radius: 0 30px 30px 0;
 }
+/*****************/
+/* About content */
+/*****************/
+.about {
+  padding-top: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about div {
+  flex: 1;
+  padding: 5%;
+  border-style: solid;
+  border-left-style: none;
+  border-width: thin;
+  border-radius: 0 30px 30px 0;
+}
+.about p {
+  margin: revert;
+  padding: revert;
+}
 /******************/
 /* Resume content */
 /******************/
@@ -89,12 +110,7 @@ article img {
   flex-direction: column;
   align-items: center;
 }
-article {
-  display: flex;
-  max-width: 75%;
-  padding: 30px 0;
-}
-.resume div{
+.resume div {
   flex: 1;
   padding: 5%;
   border-style: solid;
@@ -251,8 +267,15 @@ article {
   .hide {
     display: none;
   }
+  /* Welcome and About page */
   .main {
     background-image: url(https://imgur.com/MuTjX2P.jpg);
+    background-size: cover;
+    color: white;
+    min-height: calc(100vh - 83px);
+  }
+  .about {
+    background-image: url(../resources/me-all.jpg);
     background-size: cover;
     color: white;
     min-height: calc(100vh - 83px);
@@ -266,13 +289,21 @@ article {
     border-radius: 30px;
     border-left-style: solid;
     border-color: white;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .about div {
+    padding: 5%;
+    border-radius: 30px;
+    border-left-style: solid;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0.9);
   }
   .mobile {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
   }
+  /* Projects Page */
   .carousel-previous {
     display: none;
   }

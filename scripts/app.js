@@ -6,13 +6,14 @@
    const $mobileNav = $('.mobile-drpdwn')
    const openModal = () => {
      const $chevron = $('.chevron').attr('name');
+     // if chevron down, change to up. if up, change down
      if ($chevron === 'chevron-down-outline') {
        $('.chevron').attr('name','chevron-up-outline');
      } else if ($chevron === 'chevron-up-outline') {
        $('.chevron').attr('name','chevron-down-outline');
      }
+     // make the drop down nav appear
      $mobileNav.toggleClass('unhide');
-     $('section.main').toggleClass('hide');
    }
    $dropArrow.on('click', openModal);
 
