@@ -16,4 +16,31 @@
    }
    $dropArrow.on('click', openModal);
 
+   // carousel
+   currentProjectIndex = 0;
+   numOfProjects = $('section.carousel').children('article').length - 1;
+   $('.carousel-next').on('click', () => {
+     $('section.carousel').children('article').eq(currentProjectIndex).css('display', 'none');
+     if(currentProjectIndex < numOfProjects) {
+       currentProjectIndex++;
+     } else {
+       currentProjectIndex = 0;
+     }
+     $('section.carousel').children('article').eq(currentProjectIndex).css('display','flex');
+   })
+
+   $('.carousel-previous').on('click', () => {
+     $('section.carousel').children('article').eq(currentProjectIndex).css('display', 'none');
+     if(currentProjectIndex > 0) {
+       currentProjectIndex--;
+     } else {
+       currentProjectIndex = numOfProjects;
+     }
+     $('section.carousel').children('article').eq(currentProjectIndex).css('display','flex');
+   })
+
+
+
+
+
  })
