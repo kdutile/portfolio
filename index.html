@@ -22,15 +22,20 @@
         <li><a href="./pages/about.html">About</a></li>
         <li><a href="./pages/resume.html">Resume</a></li>
         <li><a href="./pages/projects.html">Projects</a></li>
-        <!-- make this a model -->
-        <!-- <li><ion-icon name="mail"></ion-icon><ion-icon name="logo-linkedin"></ion-icon><ion-icon name="logo-github"></ion-icon></li> -->
+        <li><button type="button" class="contact">Contact<ion-icon class="contact-chevron" name="chevron-down-outline"></ion-icon></button></li>
       </ul>
     </nav>
-    <section class="main">
-      <article>
-        <img src="https://imgur.com/MuTjX2P.jpg" class="desktop" alt="hundreds of small, round, smooth black lava rocks">
-        <p>Welcome to my page! I'm not really sure what to say right now... look over there!</p>
-      </article>
+    <section class="contact-list">
+      <ul>
+        <li><a href="mailto:kevin.dutile@gmail.com" target="_blank"><ion-icon name="mail" class="mail"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/kevindutile/" target="_blank"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a></li>
+        <li><a href="https://github.com/kdutile" target="_blank"><ion-icon name="logo-github" class="github"></ion-icon></a></li>
+      </ul>
+      <section class="user-contact">
+        <input type="text" name="enter-name" placeholder="Name">
+        <input type="email" name="enter-email" placeholder="Email">
+        <input type="submit" name="submit" value="Send it!">
+      </section>
     </section>
 
     <button type="button" class="mobile">
@@ -48,7 +53,19 @@
           <a href="https://www.linkedin.com/in/kevindutile/" target="_blank"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a>
           <a href="https://github.com/kdutile" target="_blank"><ion-icon name="logo-github" class="github"></ion-icon></a>
         </li>
+        <li class="user-contact">
+          <input type="text" name="enter-name-mobile" placeholder="Name">
+          <input type="email" name="enter-email-mobile" placeholder="Email">
+          <input type="submit" name="submit-mobile" value="Send it!">
+        </li>
       </ul>
+    </section>
+
+    <section class="main">
+      <article>
+        <img src="https://imgur.com/MuTjX2P.jpg" class="desktop" alt="hundreds of small, round, smooth black lava rocks">
+        <p>Welcome to my page! I'm not really sure what to say right now... look over there!</p>
+      </article>
     </section>
 
   </body>

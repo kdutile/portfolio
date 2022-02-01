@@ -22,23 +22,20 @@
         <li class="current-page"><a href="../pages/about.html">About</a></li>
         <li><a href="../pages/resume.html">Resume</a></li>
         <li><a href="../pages/projects.html">Projects</a></li>
-        <!-- make this a model -->
-        <!-- <li><ion-icon name="mail"></ion-icon><ion-icon name="logo-linkedin"></ion-icon><ion-icon name="logo-github"></ion-icon></li> -->
+        <li><button type="button" class="contact">Contact<ion-icon class="contact-chevron" name="chevron-down-outline"></ion-icon></button></li>
       </ul>
     </nav>
-    <section class="about">
-      <article>
-        <img src="../resources/me-all.jpg" class="desktop" alt="hundreds of small, round, smooth black lava rocks">
-        <div>
-          <p>Yup, that's me. You're probably wondering how I got here...</p>
-          <p>Isn't that how these things are supposed to start? No? Well, have it your way.</p>
-          <h3>Hi, I'm Kevin!</h3>
-          <p>I'm a software developer based out of Greater Boston. I've spent the last 10 years in EdTech, which I've enjoyed immensely.</p>
-          <p>I don't travel often, but when I do, it's generally somewhere cold and rural. You're more likely to find me on a mountain or lakeside rather than in a city. Unless there's a good craft beer scene, and then I'll make an exception.</p>
-          <p>Whatever spare time I have is generally spent with my family, often at a local playground.</p>
-          <p>I enjoy games; video, board, and social! I've also had the fortune to preside over several friends' weddings.</p>
-        </div>
-      </article>
+    <section class="contact-list">
+      <ul>
+        <li><a href="mailto:kevin.dutile@gmail.com" target="_blank"><ion-icon name="mail" class="mail"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/kevindutile/" target="_blank"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a></li>
+        <li><a href="https://github.com/kdutile" target="_blank"><ion-icon name="logo-github" class="github"></ion-icon></a></li>
+      </ul>
+      <section class="user-contact">
+        <input type="text" name="enter-name" placeholder="Name">
+        <input type="email" name="enter-email" placeholder="Email">
+        <input type="submit" name="submit" value="Send it!">
+      </section>
     </section>
 
     <button type="button" class="mobile">
@@ -56,8 +53,29 @@
           <a href="https://www.linkedin.com/in/kevindutile/" target="_blank"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a>
           <a href="https://github.com/kdutile" target="_blank"><ion-icon name="logo-github" class="github"></ion-icon></a>
         </li>
+        <li class="user-contact">
+          <input type="text" name="enter-name-mobile" placeholder="Name">
+          <input type="email" name="enter-email-mobile" placeholder="Email">
+          <input type="submit" name="submit-mobile" value="Send it!">
+        </li>
       </ul>
     </section>
+
+    <section class="about">
+      <article>
+        <img src="../resources/me-all.jpg" class="desktop" alt="hundreds of small, round, smooth black lava rocks">
+        <div>
+          <p>Yup, that's me. You're probably wondering how I got here...</p>
+          <p>Isn't that how these things are supposed to start? No? Well, have it your way.</p>
+          <h3>Hi, I'm Kevin!</h3>
+          <p>I'm a software developer based out of Greater Boston. I've spent the last 10 years in EdTech, which I've enjoyed immensely.</p>
+          <p>I don't travel often, but when I do, it's generally somewhere cold and rural. You're more likely to find me on a mountain or lakeside rather than in a city. Unless there's a good craft beer scene, and then I'll make an exception.</p>
+          <p>Whatever spare time I have is generally spent with my family, often at a local playground.</p>
+          <p>I enjoy games; video, board, and social! I've also had the fortune to preside over several friends' weddings.</p>
+        </div>
+      </article>
+    </section>
+
 
   </body>
 </html>

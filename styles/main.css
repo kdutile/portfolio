@@ -34,10 +34,10 @@ nav {
   justify-content: space-around;
   align-items: baseline;
   background-color: white;
+  z-index: 100;
 }
 nav h1 {
   order: 1;
-  flex: 4;
   font-size: 40px;
   margin: 0 6% 0 2%;
   text-align: right;
@@ -48,9 +48,64 @@ nav ul {
   flex: 5;
   display: flex;
   justify-content: flex-start;
-  gap: 10%;
-  margin: 0 4%;
+  align-items: baseline;
+  gap: 20px;
+  margin: 0 0 0 14px;
   font-size: 18px;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  font-size: 18px
+}
+/*****************/
+/* Contact modal */
+/*****************/
+.contact-list {
+  position: fixed;
+  top: 83px;
+  left: 188px;
+  width: 350px;
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  border-style: solid;
+  border-top-style: none;
+  border-width: thin;
+  border-radius: 0 0 30px 30px;
+}
+.contact-list ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.contact-list ion-icon {
+  font-size: 40px;
+  margin: auto 2%;
+}
+.user-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  align-content: space-between;
+  height: 56px;
+  margin: 10px;
+}
+.user-contact [type="submit"] {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: inherit;
+  color: inherit;
+  border-style: none;
+  padding: 0;
+}
+.unhide-flex {
+  display: flex;
+}
+.color-override {
+  color: #DC3220 !important;
 }
 /****************/
 /* Home content */
@@ -133,9 +188,9 @@ article img {
   color: #DC3220;
   transform: scale(1.1);
 }
-/******************/
+/*********************/
 /* Carousel specific */
-/******************/
+/*********************/
 .carousel {
   padding-top: 83px;
   display: flex;
@@ -178,11 +233,12 @@ article img {
   top: 0;
   padding: 10px;
   background-color: white;
+  z-index: 100;
 }
 .mobile h1 {
   font-size: 40px;
   margin: 0;
-  margin-right: 2%;
+  margin-right: 4%;
 }
 .mobile ion-icon {
   font-size: 40px;
@@ -196,6 +252,7 @@ article img {
   left: 0;
   width: 100vw;
   height: calc(100vh - 83px);
+  z-index: 100;
 }
 .mobile-drpdwn ul {
   display: flex;
@@ -223,9 +280,9 @@ article img {
 .mobile-drpdwn ion-icon{
   margin: auto 0;
 }
-/*****************/
+/*********************/
 /* Nav hover styling */
-/*****************/
+/*********************/
 .current-page {
   color:#005AB5;
   transform: none;
@@ -234,11 +291,21 @@ article img {
   color: #DC3220;
   transform: scale(1.1);
 }
+.desktop button:hover{
+  color: #DC3220;
+}
+.desktop hover {
+  color: #DC3220;
+  transform: scale(1.1);
+}
 .mobile-drpdwn li:hover {
   color: #DC3220;
   transform: scale(1.1);
 }
-
+.user-contact [type="submit"]:hover {
+  color: #DC3220;
+  transform: scale(1.1);
+}
 #drop-icons {
   color: black;
   transform: none;
@@ -260,9 +327,13 @@ article img {
 @media screen and (max-width: 715px) {
   .desktop {
     display: none;
+    z-index: 100;
   }
   .unhide {
     display: block;
+  }
+  .unhide-flex {
+    display: none;
   }
   .hide {
     display: none;
@@ -302,6 +373,27 @@ article img {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+  }
+  .user-contact {
+    height: revert;
+    margin: revert;
+    gap: 10px;
+  }
+  .user-contact p {
+    font-size: 30px;
+    text-align: center;
+  }
+  .user-contact:hover {
+    color: black !important;
+    transform: scale(1.0) !important;
+  }
+  .user-contact [type="submit"] {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: inherit;
+    color: inherit;
+    border-style: none;
+    padding: 0;
   }
   /* Projects Page */
   .carousel-previous {
